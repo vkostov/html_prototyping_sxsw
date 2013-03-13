@@ -7,7 +7,6 @@ folderMount = (connect, point) ->
 
 
 module.exports = (grunt) ->
-
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
     stylus:
@@ -56,5 +55,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-livereload')
 
   # Default task(s).
-  grunt.registerTask('compile', ['coffee','stylus','jade'])
+  grunt.registerTask('compile', ['coffee', 'stylus', 'jade'])
   grunt.registerTask('default', ['compile', 'livereload-start', 'connect', 'regarde'])
